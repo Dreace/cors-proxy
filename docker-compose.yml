@@ -1,10 +1,10 @@
 version: '3'
 services:
   cors_proxy:
-    build: .
+    image: ghcr.io/dreace/cors-proxy:latest
     ports:
       - "5000:5000"
     environment:
-      - PROXY_TIMEOUT=30
-      - PROXY_WHITE_LIST=example.com,allowed.com
+      - PROXY_TIMEOUT=60
+      - PROXY_WHITE_LIST=
       - PROXY_BLACK_LIST=blocked.com,forbidden.com
