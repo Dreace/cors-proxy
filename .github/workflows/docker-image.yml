@@ -3,10 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # 当推送到 main 分支时触发
-  pull_request:
-    branches:
-      - main  # 当对 main 分支创建 PR 时触发
+      - master  # 当推送到 master 分支时触发
 
 jobs:
   build:
