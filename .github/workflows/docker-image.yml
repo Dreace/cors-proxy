@@ -40,9 +40,9 @@ jobs:
       # Step 4: 构建 Docker 镜像
       - name: Build Docker image
         run: |
-          docker build -t ghcr.io/$REPO_LC/cors-proxy:latest .
+          docker build -t ghcr.io/$OWNER_LC/cors-proxy:latest .
 
       # Step 5: 推送 Docker 镜像到 GitHub Container Registry
       - name: Push Docker image
         run: |
-          docker push ghcr.io/$REPO_LC/cors-proxy:latest
+          docker push ghcr.io/$OWNER_LC/cors-proxy:latest
